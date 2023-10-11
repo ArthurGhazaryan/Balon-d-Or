@@ -1,43 +1,105 @@
-/* * {
+*{
     margin: 0;
     padding: 0;
     border: none;
     outline: none;
-}
-
-body {
-    background-color: grey;
-}
-
-.h1 {
-    color: red;
-    font-size: 40px;
-    text-align: center;
+    text-decoration: none;
+    text-transform: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
-.a {
-    color: red;    
+.logo {
+    width: 70px;
+    height: 115px;
 }
 
-.div1 {
-    background-color: springgreen;
-    width: 1800px;
-    height: 150px;
-    border-top: 10px solid red;
-    border-right: 10px dotted yellow;
-    border-bottom: 10px dashed black;
-    border-left: 10px double blue;
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(29, 27, 27);
+    color: rgb(147, 115, 35);
+    z-index: 1000;
+    letter-spacing: 4px;
+    padding: 0 3%;
 }
 
-.div2 {
+.h1, .a {
+    color: rgb(147, 115, 35);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.a:hover {
+    color: rgb(172, 172, 172);
+    size: 200%;
+}
+
+h1:hover {
+    color: rgb(172, 172, 172); 
+    font-size: 39px;
+}
+
+.section {
+    margin: 1% 0 0 0;
+}
+
+.slider {
     width: 100%;
     height: 100vh;
-    background-image: url('https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg');
-    background-size: cover;
+    background-image: url('https://www.fifamuseum.com/files/backup/mm/Photo/Collection/Generic/50/03/02/500302_L1.jpg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    border-radius: 10px 20px;
-} */
+    background-position: 100%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    animation: img 20s infinite linear;
+}
+
+@keyframes img {
+    0%{
+        background-image: url('https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt552d52feebd1ae29/64f70e650b5370e125df9a26/BDR_Power_Ranking.jpg?auto=webp&format=pjpg&width=3840&quality=60');
+    }
+    25%{
+        background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8UITCsaFhN3GHF_Ha9kFyE-gflENsjIZmvoSNLAXYVdewNoHMubdrdrihh1clZIbbKWPbXEXt6qHzMc4KO0WfdsoJTbSs2wPlocrgFubSymUc-YZKC13J894942NHW9xjthUM2jSt91mvJ5oxmgpTIUilTXnBDCRBYG5k4biirXWP-Vc_NcMkepDtoPxQ/s1000/2023%20ballon%20d%20Or%20%281%29.jpg');
+    }
+    50%{
+        background-image: url('https://static.footballtransfers.com/images/cn/image/upload/q_75,w_1200/footballcritic/iloipfve8bhdlryl4bv5.webp');
+    }
+    75%{
+        background-image: url('https://staticg.sportskeeda.com/editor/2023/09/abd21-16941628694148-1920.jpg');
+    }
+}
+
+.span {
+    color: rgb(255, 102, 0);
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.About {
+    background-color: rgb(20, 18, 18);
+}
+
+.p {
+    color: white;
+}
+
+.aa {
+    color: gold;
+}
+
+.kdb {
+    margin-top: 50px;
+}
+
+.debruyne, .haaland, .messi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 20px;
+}
